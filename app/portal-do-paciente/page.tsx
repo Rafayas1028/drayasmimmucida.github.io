@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { siteConfig } from "@/data/site";
+export default function Page(){return <section className="section"><div className="container-p max-w-4xl space-y-4"><h1 className="text-4xl font-semibold">Portal do Paciente</h1><p>Área inicial para centralizar orientações, retornos e acesso seguro a serviços digitais da clínica.</p><div className="card"><p>Login seguro em breve via plataforma autenticada.</p><a href={siteConfig.portalLink} className="btn-soft mt-3">Acessar plataforma externa</a></div><Link href="/portal-do-paciente/exames" className="underline">Ir para área de exames</Link></div></section>}
